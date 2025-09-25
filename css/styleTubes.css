@@ -1,0 +1,122 @@
+/* Mesmo CSS da resposta anterior – já incluso no ZIP */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #0a0a14;
+  --text: #e0e0ff;
+  --accent: #00f3ff;
+  --card-bg: #111122;
+  --hover-glow: rgba(0, 243, 255, 0.6);
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Exo 2', sans-serif;
+  line-height: 1.6;
+  padding-bottom: 60px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding: 16px 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.navbar a {
+  color: var(--text);
+  text-decoration: none;
+  margin: 0 16px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+.navbar a:hover,
+.navbar a.active {
+  color: var(--accent);
+  text-shadow: 0 0 8px var(--accent);
+}
+
+.container {
+  max-width: 1400px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.page-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--accent);
+  text-shadow: 0 0 10px rgba(0, 243, 255, 0.5);
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 32px;
+  justify-items: center;
+}
+
+.crt-tv {
+  background: var(--card-bg);
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 240px;
+}
+
+.crt-tv:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 20px var(--hover-glow);
+}
+
+.crt-tv img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  border: 2px solid #222;
+  display: block;
+  background: #000;
+}
+
+.project-title {
+  display: block;
+  text-align: center;
+  color: var(--accent);
+  font-family: 'Orbitron', sans-serif;
+  font-size: 14px;
+  margin-top: 12px;
+  letter-spacing: 1px;
+}
+
+.footer {
+  text-align: center;
+  padding: 30px 0;
+  color: #888;
+  font-size: 14px;
+  border-top: 1px solid #222;
+  margin-top: 60px;
+}
+
+@media (max-width: 768px) {
+  .navbar { flex-wrap: wrap; }
+  .navbar a { margin: 6px; font-size: 16px; }
+  .page-title { font-size: 28px; }
+  .project-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 20px; }
+}
+
+@media (max-width: 480px) {
+  .project-grid { grid-template-columns: 1fr; }
+}
