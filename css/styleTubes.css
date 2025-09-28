@@ -66,6 +66,7 @@ body {
   justify-items: center;
 }
 
+
 .crt-tv {
   background: var(--card-bg);
   border-radius: 14px;
@@ -74,7 +75,12 @@ body {
   position: relative;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 100%;
-  max-width: 240px;
+  max-width: 250px;
+}
+.crt-tv img{
+
+  width: 100%;
+  max-width: 200px;
 }
 
 .crt-tv:hover {

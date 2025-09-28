@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  
 }
 
 :root {
@@ -156,5 +157,31 @@ width: 100%;
 border-radius: 10px;
 margin: 20px 0;
 overflow: hidden;
+.foto-perfil{
+  display: block;            /* Remove qualquer espaço em branco ao redor da imagem */
+  margin: 0 auto 20px;      /* Centraliza a imagem e adiciona margem inferior */
+ width:120px;               /* Tamanho ideal para destaque sem exagero */
+  height: 120px;
+  border-radius: 50%;         /* Deixa a imagem circular */
+  object-fit: cover;          /* Garante que a imagem preencha o espaço sem distorcer */
+  border: 3px solid #00ffff;  /* Borda neon azul para combinar com o tema */
+  box-shadow: 0 0 15px #00ffff; /* Efeito de brilho para destacar */
+  transition: transform 0.3s ease;
+}
 
+}
+.foto-perfil{
+  justify-content: center;
+  display: block;            /* Remove qualquer espaço em branco ao redor da imagem */
+  margin: 0 auto 20px;      /* Centraliza a imagem e adiciona margem inferior */
+ width:180px;               /* Tamanho ideal para destaque sem exagero */
+  height: 180px;
+  border-radius: 50%;         /* Deixa a imagem circular */
+  object-fit: cover;          /* Garante que a imagem preencha o espaço sem distorcer */
+  border: 3px solid #00ffff;  /* Borda neon azul para combinar com o tema */
+  box-shadow: 0 0 15px #00ffff; /* Efeito de brilho para destacar */
+  transition: transform 0.3s ease;
+}
+.foto-perfil:hover {
+  transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
 }
