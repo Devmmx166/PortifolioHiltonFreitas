@@ -185,3 +185,57 @@ overflow: hidden;
 .foto-perfil:hover {
   transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
 }
+.formulario-contato {
+      max-width: 500px;
+      margin: 40px auto;
+      background: var(--card-bg);
+      padding: 20px;
+      border-radius: 10px;
+      border: 2px solid var(--accent);
+      box-shadow: 0 0 20px rgba(0,243,255,0.15);
+    }
+
+    .formulario-contato h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .formulario-contato label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      color: var(--accent);
+      font-family: 'Orbitron';
+    }
+
+    .formulario-contato input,
+    .formulario-contato textarea {
+      width: 100%;
+      background: #0a0a18;
+      border: 1px solid #00f3ff55;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 6px;
+      margin-bottom: 16px;
+      color: var(--text);
+      outline: none;
+      transition: 0.3s;
+    }
+
+    .formulario-contato input:focus,
+    .formulario-contato textarea:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 10px var(--accent);
+    }
+
+    .formulario-contato textarea {
+      height: 140px;
+      resize: vertical;
+    }
+
+    #status {
+      margin-top: 10px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--accent);
+    }
